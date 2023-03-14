@@ -9,10 +9,19 @@
         <script src="script.js" type="module"></script>
     </head>
     <body>
-        <h1>Wordle Challenge</h1>
-        <form>
-            <label for="word">Enter a real five-letter word</label>
-            <input type="text" id="word" name="word to check" minlength="5" maxlength="5">
-            <input type="submit" id="submit" value="Submit">
+        <h1 class="title">WORDLE</h1>
+        <form class="center">
+            <input type="text" id="letterOne" name="letterOne" class="letter" maxlength="1" autocomplete="off">
+            <input type="text" id="letterTwo" name="letterTwo" class="letter" maxlength="1" autocomplete="off">
+            <input type="text" id="letterThree" name="letterThree" class="letter" maxlength="1" autocomplete="off">
+            <input type="text" id="letterFour" name="letterFour" class="letter" maxlength="1" autocomplete="off">
+            <input type="text" id="letterFive" name="letterFive" class="letter" maxlength="1" autocomplete="off"> <br>
+            <input class="submit" type="submit" id="submit" value="Submit">
         </form>
+        <div id="wordCheckFalse" class="message display-none">
+            <p>Word not in word list</p>
+        </div>
+        <div id="wordCheckTrue" class="message display-none">
+            <p>This is a real word!</p>
+        </div>
     </body>
