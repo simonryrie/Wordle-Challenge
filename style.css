@@ -1,1 +1,58 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+    text-align: center;
+}
+
+.center {
+    display: inline-block;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Display */
+
+.display-none {
+    display: none;
+}
+
+/* Title */
+
+.title {
+    text-transform: uppercase;
+}
+
+/* Letters */
+
+.letter {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border: 2px solid black;
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Submit */
+
+.submit {
+    margin-top: 25px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
