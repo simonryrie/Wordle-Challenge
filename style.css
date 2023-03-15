@@ -8,9 +8,6 @@ body {
 
 .center {
     display: inline-block;
-}
-
-.center {
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,6 +42,8 @@ body {
 /* Submit */
 
 .submit {
+    display: inline-flex;
+    align-items: center; 
     margin-top: 25px;
     padding: 10px;
     border: 0;
@@ -53,10 +52,47 @@ body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    
 }
 
 .submit:hover {
     cursor: pointer;
     background-color: green;
     color: white;
+}
+
+/* Animation */
+
+.wrong-word {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(3px); }
+    10% { transform: translateX(-3px); }
+    20% { transform: translateX(-3px); }
+    30% { transform: translateX(3px); }
+    40% { transform: translateX(3px); }
+    50% { transform: translateX(-3px); }
+    60% { transform: translateX(-3px); }
+    70% { transform: translateX(3px); }
+    80% { transform: translateX(3px); }
+    90% { transform: translateX(-3px); }
+}
+
+/* Message */
+
+.message {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+    width: 120px;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    
 }
