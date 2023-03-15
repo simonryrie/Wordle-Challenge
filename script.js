@@ -26,10 +26,19 @@ function displayMessage(boolean) {
     const wordCheckTrue = document.getElementById("wordCheckTrue");
     const wordCheckFalse = document.getElementById("wordCheckFalse");
     if(boolean === true) {
-        animateMessage(wordCheckTrue)
+        animateMessage(wordCheckTrue);
     }
     else {
-        animateMessage(wordCheckFalse)
+        animateMessage(wordCheckFalse);
+        const letters = document.getElementsByClassName("letter");
+        for (let i = 0; i < letters.length; i++) {
+            letters[i].classList.add("wrong-word");
+        }
+        setTimeout(() => {
+            for (let i = 0; i < letters.length; i++) {
+                letters[i].classList.remove("wrong-word");
+            }
+          }, 1000);
     }
 }
 
